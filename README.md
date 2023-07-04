@@ -6,7 +6,7 @@ This project was done as part of the bachelor thesis at Tilburg University. This
 
 The structure of the repository is described below:
 
-''' bash
+```bash
 Cycle-MobiGAN/
 ├── Dataset/
 │   ├── Dataset.py
@@ -21,7 +21,7 @@ Cycle-MobiGAN/
 │   ├── train_CycleGAN_IR_DWS.py
 └── Utils/
    ├── visualize_images.py
-'''
+```
 
 Each subfolder has it's own README.md that explains what files that folders contains and their purpose.
 
