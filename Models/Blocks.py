@@ -218,39 +218,6 @@ class InvertedResidualBlock(nn.Module):
         return orig_x + x
 ###
 
-
-
-### Define a block that will be used for the critic
-class CriticBlock(nn.Module):
-    """
-    Criticblock class. Performs a convolution, does layer norm and finally applies layer norm
-    
-    Inputs: input_channels -> The number of channels in the input (e.g 3 for RBG image)
-            kernel_size -> Size of the convolution kernel/filter
-            stride -> Stride of the convolution operations
-            activation -> Which activation function to use (relu / leakyrelu)
-            
-    """
-    
-    # Define the constructor
-    def __init__(self, input_channels, output_channels = 64, kernel_size = 4, stride = 2, activation="relu"):
-        super().__init__()
-        # Define a convolution layer, the padding is always one in the CycleGAN paper
-        self.conv = nn.Conv2d(input_channels, output_channels, kernel_size = kernel_size, padding = 1, stride = stride, padding_mode = "reflect")
-        # Apply the specified activation
-        self.activation = nn.ReLU() if activation == 'relu' else nn.LeakyReLU(0.2)
-        
-    # Define the forward pass
-    def forward(self, x):
-        # Apply the convolution operator to input x
-        x = self.conv(x)
-        # Apply the activation
-        x = self.activation(x)
-        # Return the output
-        return x  
-###
-
-
 ### Define the fully depthwise seperable blocks for the critic
 
 ### Define a block that increase number of channels
@@ -285,7 +252,7 @@ class InitialBlock_DWS(nn.Module):
         return self.conv_dws(x)   
 ###
 
-### Define a critic block that uses depth convolutions instead of normal convolutions
+### Define a down block that uses depth convolutions instead of normal convolutions
 class DownBlock_DWS(nn.Module):
     """
     Downblock class. Performs a depthwise separable convolution, does instance norm and finally applies activation
