@@ -7,18 +7,18 @@ This project was done as part of the bachelor thesis at Tilburg University. This
 The structure of the repository is described below:
 Cycle-MobiGAN/
 ├── Dataset/
-│ ├── Dataset.py
+│   ├── Dataset.py
 ├── Models/
-│ ├── Blocks.py
-│ └── Discriminators.py
-│ ├── Generators.py
-│ └── Loss_functions.py
+│   ├── Blocks.py
+│   └── Discriminators.py
+│   ├── Generators.py
+│   └── Loss_functions.py
 ├── Train py files/
-│ ├── train_CycleGAN.py
-│ └── train_CycleGAN_DWS.py
-│ ├── train_CycleGAN_IR_DWS.py
+│   ├── train_CycleGAN.py
+│   └── train_CycleGAN_DWS.py
+│   ├── train_CycleGAN_IR_DWS.py
 └── Utils/
-├── visualize_images.py
+   ├── visualize_images.py
 
 Each subfolder has it's own README.md that explains what files that folders contains and their purpose.
 
