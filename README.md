@@ -5,6 +5,7 @@
 This project was done as part of the bachelor thesis at Tilburg University. This repository contains more structured code with notebooks and results with different datasets. The purpose of this project was to investigate that to what extent does modifying CycleGAN architecture with depthwise separable convolution and inverted residual blocks as introduced in MobileNet and MobileNet v2 effect computational efficiency and generated image quality.
 
 The structure of the repository is described below:
+
 Cycle-MobiGAN/
 ├── Dataset/
 │   ├── Dataset.py
