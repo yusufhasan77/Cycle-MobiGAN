@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project was done as part of the bachelor thesis at Tilburg University. This repository contains more structured code with notebooks and results with different datasets. The purpose of this project was to investigate that to what extent does modifying CycleGAN architecture with depthwise separable convolution and inverted residual blocks as introduced in MobileNet and MobileNet v2 effect computational efficiency and generated image quality.
+This project was done as part of the bachelor thesis at Tilburg University. The purpose of this project was to investigate that to what extent does modifying CycleGAN architecture with depthwise separable convolution and inverted residual blocks as introduced in MobileNet and MobileNet v2 effect computational efficiency and generated image quality.
 The methodology section below provides details of architectures and training parameters, whereas, the results section displays the results.
 
 The structure of the repository is described below:
@@ -28,11 +28,23 @@ Each subfolder has it's own README.md that explains what files that folders cont
 
 ## Introduction
 
+The purpose of this project was to explore if CycleGAN architecture can be modified to increase efficiency (faster training/inference times) without compromising generated image quality. The motivation for this being the robotics research being conducted at AI for Robotics Lab at Tilburg University. One of the research projects had an unpaired image to image translation problem. Since the compute resources are limited in a robot, a more efficient CycleGAN architecture was explored.
+
 ## Methodology
+
+Initially three models which are detailed below. The models were trained for 200 epochs with a batch size of 1. Adam optimizer was used with a learning rate of 0.0002 and betas being 0.5 and 0.999 respectively. The cycle consistency loss and identity loss weights were selected to be 10. Unlike the original implementation a running buffer of images was not used to update the discriminators.
+
+Initially 3 models were trained. All models were trained for
+### Cycle GAN
+The architecture was same as introduced in the original CycleGAN paper. The number of residual blocks for the generators was chosen to be 9. PatchGAN discriminators were used.
+### CycleGAN Depthwise Separable (CG_DWS or Cycle MobiGAN V1)
+The architecture of this model was same as CycleGAN except all convolutional layers in generators including the transpose convolutions were replaced by depthwise seperable convolutions. The discriminators were PatchGAN discriminators with all convolution layers replaced with depthwise seperable convolutions. This model is a fusion of CycleGAN and MobileNet, therefore, it's name Cycle MobiGAN V1.
+### CycleGAN Depthwise Separable and Inverted Residual (CG_DWS_IR or Cycle MobiGAN V2)
+The architecture of this model was same as Cycle MobiGAN except all residual blocks in  the generators were replaced by inverted residual blocks as introduced in MobileNet V2. This model is a fusion of CycleGAN and MobileNet V2, therefore, it's name Cycle MobiGAN V2.
 
 ## Results
 
-
+### Apples and Oranges Dataset
 Figure 1: Generated images in domain Y (oranges) using images in domain X (apples). X -> Y mapping
 |       | Real Image                    | CycleGAN                      | Cycle-MobiGAN V1              | Cycle-MobiGAN V2              |
 |-------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
