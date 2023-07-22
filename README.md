@@ -36,18 +36,14 @@ Each subfolder has it's own README.md that explains what files that folders cont
 Figure 1: Generated images in domain Y (oranges) using images in domain X (apples). X -> Y mapping
 |       | Real Image                    | CycleGAN                      | Cycle-MobiGAN V1              | Cycle-MobiGAN V2              |
 |-------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
-| 1     | ![Image 1](images/image1.png) | ![Image 2](images/image2.png) | ![Image 3](images/image3.png) | ![Image 4](images/image4.png) |
-| 2     | ![Image 5](images/image5.png) | ![Image 6](images/image6.png) | ![Image 7](images/image7.png) | ![Image 8](images/image8.png) |
-| 3     | ![Image 9](images/image9.png) | ![Image 10](images/image10.png)| ![Image 11](images/image11.png)| ![Image 12](images/image12.png)|
-| 4     | ![Image 13](images/image13.png)| ![Image 14](images/image14.png)| ![Image 15](images/image15.png)| ![Image 16](images/image16.png)|
-| 5     | ![Image 17](images/image17.png)| ![Image 18](images/image18.png)| ![Image 19](images/image19.png)| ![Image 20](images/image20.png)|
+| 1     | ![Image 1](Generated Images/ApplesOranges/Generated Apples/Original/1.jpg) | ![Image 2](Generated Images/ApplesOranges/Generated Apples/CycleGAN/apple1.jpg) | ![Image 3](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN/apple1.jpg) | ![Image 4](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN V2/apple1.jpg) |
+| 2     | ![Image 5](Generated Images/ApplesOranges/Generated Apples/Original/2.jpg) | ![Image 6](Generated Images/ApplesOranges/Generated Apples/CycleGAN/apple2.jpg) | ![Image 7](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN/apple2.jpg) | ![Image 8](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN V2/apple2.jpg) |
+| 3     | ![Image 9](Generated Images/ApplesOranges/Generated Apples/Original/3.jpg) | ![Image 10](Generated Images/ApplesOranges/Generated Apples/CycleGAN/apple3.jpg) | ![Image 11](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN/apple3.jpg) | ![Image 12](Generated Images/ApplesOranges/Generated Apples/Cycle MobiGAN V2/apple3.jpg) |
 
 Figure 2: Generated images in domain X (apples) using images in domain Y (oranges). Y -> X mapping
 |       | Real Image                    | CycleGAN                      | Cycle-MobiGAN V1              | Cycle-MobiGAN V2              |
 |-------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
-| 1     | ![Image 1](images/image1.png) | ![Image 2](images/image2.png) | ![Image 3](images/image3.png) | ![Image 4](images/image4.png) |
-| 2     | ![Image 5](images/image5.png) | ![Image 6](images/image6.png) | ![Image 7](images/image7.png) | ![Image 8](images/image8.png) |
-| 3     | ![Image 9](images/image9.png) | ![Image 10](images/image10.png)| ![Image 11](images/image11.png)| ![Image 12](images/image12.png)|
-| 4     | ![Image 13](images/image13.png)| ![Image 14](images/image14.png)| ![Image 15](images/image15.png)| ![Image 16](images/image16.png)|
-| 5     | ![Image 17](images/image17.png)| ![Image 18](images/image18.png)| ![Image 19](images/image19.png)| ![Image 20](images/image20.png)|
+| 1     | ![Image 1](Generated Images/ApplesOranges/Generated Oranges/Original/1.jpg) | ![Image 2](Generated Images/ApplesOranges/Generated Oranges/CycleGAN/orange1.jpg) | ![Image 3](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN/orange1.jpg) | ![Image 4](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN V2/orange1.jpg) |
+| 2     | ![Image 5](Generated Images/ApplesOranges/Generated Oranges/Original/2.jpg) | ![Image 6](Generated Images/ApplesOranges/Generated Oranges/CycleGAN/orange2.jpg) | ![Image 7](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN/orange2.jpg) | ![Image 8](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN V2/orange2.jpg) |
+| 3     | ![Image 9](Generated Images/ApplesOranges/Generated Oranges/Original/3.jpg) | ![Image 10](Generated Images/ApplesOranges/Generated Oranges/CycleGAN/orange3.jpg) | ![Image 11](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN/orange3.jpg) | ![Image 12](Generated Images/ApplesOranges/Generated Oranges/Cycle MobiGAN V2/orange3.jpg) |
 
