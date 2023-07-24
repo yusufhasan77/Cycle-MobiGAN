@@ -22,18 +22,18 @@ Cycle-MobiGAN/
 │   ├── train_CycleGAN_IR_DWS.py
 └── Utils/
    ├── visualize_images.py
-   ├── GenImages_CycleGAN.py
-   ├── GenImages_CycleGAN_DWS.py
-   ├── GenImages_CycleGAN_IR_DWS.py
 ```
 
 Each subfolder has it's own README.md that explains what files that folders contains and their purpose.
+
+## Training The Models
+The models can be trained using the jupyter files in the main directory of this repository. The corresponing python files are in training py files.
 
 ## Models
 
 Initially three models were trained which are detailed below. The models were trained for 200 epochs with a batch size of 1. Adam optimizer was used with a learning rate of 0.0002 and betas being 0.5 and 0.999 respectively. The cycle consistency loss and identity loss weights were selected to be 10. Unlike the original implementation a running buffer of images was not used to update the discriminators.
 
-### Cycle GAN
+### CycleGAN
 The architecture was same as introduced in the original CycleGAN paper. The number of residual blocks for the generators was chosen to be 9. PatchGAN discriminators were used.
 ### CycleGAN Depthwise Separable (CG_DWS or Cycle MobiGAN V1)
 The architecture of this model was same as CycleGAN except all convolutional layers in generators including the transpose convolutions were replaced by depthwise seperable convolutions. The discriminators were PatchGAN discriminators with all convolution layers replaced with depthwise seperable convolutions. This model is a fusion of CycleGAN and MobileNet, therefore, it's name Cycle MobiGAN V1.
@@ -43,6 +43,7 @@ The architecture of this model was same as Cycle MobiGAN except all residual blo
 The architecture of this model was same as Cycle MobiGAN V2 except the discriminators utilized normal convolution layers instead of depthwise seperable convolutions. This architecture was explored because the previous two (MobiGAN and MobiGAN V2) did not have very encouraging results. The possible cause was very few parameters in generators and discriminators. The discrimanators had  much less parameters in the previous two architectures, therefore, the intuition was that good image quality can be achieved by just modify the discriminators.
 
 ## Results
+The results DO NOT contain the best case or worst case scenarios.
 
 ### Apples and Oranges Dataset
 Figure 1: Generated images in domain X (apples) using images in domain Y (oranges). Y -> X mapping
