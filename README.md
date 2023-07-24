@@ -4,6 +4,7 @@
 
 This project was done as part of the bachelor thesis at Tilburg University. The purpose of this project was to explore if CycleGAN architecture can be modified to increase efficiency (faster training/inference times) without compromising generated image quality. The motivation for this being the robotics research being conducted at AI for Robotics Lab at Tilburg University. One of the research projects had an unpaired image to image translation problem. Since the compute resources are limited in a robot, a more efficient CycleGAN architecture was explored by utilizing the depthwise seperable convolutions and inverted residual blocks as introduced in MobileNet and MobileNetV2 respectively.
 The models section below provides details of architectures and training parameters, whereas, the results section displays the results.
+The code was originally written for the horse2zebra dataset, therefore some comments might refer to it.
 
 The structure of the repository is described below:
 
