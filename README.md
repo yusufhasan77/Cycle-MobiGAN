@@ -45,14 +45,14 @@ The architecture of this model was same as Cycle MobiGAN V2 except the discrimin
 ## Results
 
 ### Apples and Oranges Dataset
-Figure 1: Generated images in domain Y (oranges) using images in domain X (apples). X -> Y mapping
+Figure 1: Generated images in domain X (apples) using images in domain Y (oranges). Y -> X mapping
 |       | Real Image                    | CycleGAN                      | Cycle-MobiGAN V1              | Cycle-MobiGAN V2              | Cycle-MobiGAN V2 FD |
 |-------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
 | 1     | ![Image 1](GeneratedImages/apple2orange/GeneratedApples/Original/1.jpg) | ![Image 2](GeneratedImages/apple2orange/GeneratedApples/CycleGAN/apple1.jpg) | ![Image 3](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGAN/apple1.jpg) | ![Image 4](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGANV2/apple1.jpg) | ![Image 5]() |
 | 2     | ![Image 6](GeneratedImages/apple2orange/GeneratedApples/Original/2.jpg) | ![Image 7](GeneratedImages/apple2orange/GeneratedApples/CycleGAN/apple2.jpg) | ![Image 8](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGAN/apple2.jpg) | ![Image 9](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGANV2/apple2.jpg) | ![Image 10]() |
 | 3     | ![Image 11](GeneratedImages/apple2orange/GeneratedApples/Original/3.jpg) | ![Image 12](GeneratedImages/apple2orange/GeneratedApples/CycleGAN/apple3.jpg) | ![Image 13](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGAN/apple3.jpg) | ![Image 14](GeneratedImages/apple2orange/GeneratedApples/CycleMobiGANV2/apple3.jpg) | ![Image 15]() |
 
-Figure 2: Generated images in domain X (apples) using images in domain Y (oranges). Y -> X mapping
+Figure 2: Generated images in domain Y (oranges) using images in domain X (apples). X -> Y mapping
 |       | Real Image                    | CycleGAN                      | Cycle-MobiGAN V1              | Cycle-MobiGAN V2              | Cycle-MobiGAN V2 FD |
 |-------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|-------------------------------|
 | 1     | ![Image 1](GeneratedImages/apple2orange/GeneratedOranges/Original/1.jpg) | ![Image 2](GeneratedImages/apple2orange/GeneratedOranges/CycleGAN/orange1.jpg) | ![Image 3](GeneratedImages/apple2orange/GeneratedOranges/CycleMobiGAN/orange1.jpg) | ![Image 4](GeneratedImages/apple2orange/GeneratedOranges/CycleMobiGANV2/orange1.jpg) | ![Image 5]() |
